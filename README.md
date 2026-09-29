@@ -1,4 +1,4 @@
-#JoynCon
+# JoynCon
 
 JoynCon is a compatibility checker for JoynCon, the application to merge 2 joycons into a single controller.
 
