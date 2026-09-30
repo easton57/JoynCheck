@@ -1,46 +1,48 @@
-# JoynCon Privacy Policy
+# JoynCheck Privacy Policy
 
-_Effective date: 2026-09-26_
+_Effective date: 2026-09-30_
 
-JoynCon is developed by Easton Seidel ("I", "me"). This policy covers both the paid version
-distributed on Google Play and the open-source builds published on GitHub. Both builds work the
-same way with respect to your data.
+JoynCheck is developed by Easton Seidel ("I", "me"). It is a free compatibility checker that tells
+you whether JoynCon will work on your phone before you buy it. There is no paid version and no
+in-app purchase. This policy covers both the version distributed on Google Play and the
+open-source builds published on GitHub. Both builds work the same way with respect to your data.
 
-**In short: JoynCon does not collect, store, transmit, sell, or share any personal data. It does
+**In short: JoynCheck does not collect, store, transmit, sell, or share any personal data. It does
 not connect to the internet.**
 
 ## What the app accesses on your device, and why
 
-- **Controller input.** JoynCon reads button and stick input from connected Nintendo Joy-Con
-  controllers so it can merge a left and right Joy-Con into one virtual gamepad. This input is
-  processed in memory on your device as it happens. It is never recorded, logged, or sent anywhere.
-- **Accessibility Service (optional, off by default).** If you turn on "JoynCon Button Fallback",
-  JoynCon uses Android's Accessibility Service API only to receive key events from Joy-Con
-  controllers while another app (such as a game) is in the foreground, and to remap them. It does
-  not read screen content, window contents, or anything you type. Key events from every other
-  device pass through untouched. The app asks for your consent before you enable this, and you can
-  turn it off at any time in Android's Accessibility settings.
-- **Remap settings.** Your button mapping is stored locally in the app's private storage on your
-  device. Uninstalling the app deletes it. If you have Android device backup turned on, Android may
-  include this setting in your personal Google backup; I cannot access that backup.
-- **Installed-app check.** JoynCon checks only whether the Shizuku app is installed so it can
+- **Input devices.** Through Shizuku, JoynCheck opens your phone's input devices to test whether
+  the operations JoynCon relies on are allowed. It reads each device's hardware identifiers (such
+  as vendor and product ID), name, and capabilities only to count what can be opened and to find
+  connected Joy-Con controllers. It briefly creates and then removes a virtual test gamepad to
+  confirm Android accepts it.
+- **Controller input (live test only).** When you start the live test, JoynCheck reads button and
+  stick input from your Joy-Con controllers for up to 60 seconds, only to confirm that presses and
+  stick movement are detected. This input is processed in memory as it happens. It is never
+  recorded, logged, or sent anywhere.
+- **Running-process check.** JoynCheck checks whether JoynCon's own merge service or a leftover
+  JoynCheck helper is running, so it can warn you or clean up before testing. It looks only for
+  those two processes by name.
+- **Installed-app check.** JoynCheck checks only whether the Shizuku app is installed so it can
   prompt you to install or open it. It does not look at any other installed apps.
+- **Results.** Check results are shown on screen and kept in memory only. JoynCheck saves no
+  settings or results, and it opts out of Android device backup. Closing the app discards
+  everything.
 
 ## Network access and third-party code
 
-JoynCon does not request internet permission and cannot send data off your device. It includes no
-analytics, advertising, tracking, or crash-reporting SDKs.
+JoynCheck does not request internet permission and cannot send data off your device. It includes
+no analytics, advertising, tracking, or crash-reporting SDKs.
 
 ## Third-party services
 
-- **Google Play (paid version only).** Purchases are processed entirely by Google. I never receive
-  your payment details. Google may provide me with limited transaction records (such as order
-  number, date, price, and country or region) for accounting, tax, and refund purposes. How Google
-  handles your information is covered by the
-  [Google Privacy Policy](https://policies.google.com/privacy).
-- **Shizuku.** JoynCon relies on Shizuku, a separate app by a different developer that you install
-  yourself. It runs entirely on your device. See Shizuku's own documentation and store listing for
-  its practices.
+- **Google Play.** If you install JoynCheck from Google Play, Google handles the download under the
+  [Google Privacy Policy](https://policies.google.com/privacy). If you later buy JoynCon, that
+  purchase is covered by JoynCon's own privacy policy.
+- **Shizuku.** JoynCheck relies on Shizuku, a separate app by a different developer that you
+  install yourself. It runs entirely on your device. See Shizuku's own documentation and store
+  listing for its practices.
 - **GitHub (open-source version only).** Downloading the source code or builds from GitHub is
   subject to [GitHub's Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement).
   The app itself does not communicate with GitHub.
@@ -52,7 +54,7 @@ in your message. I use it only to reply to you, and I delete it on request.
 
 ## Children
 
-JoynCon is not directed at children under 13 and does not knowingly collect any information from
+JoynCheck is not directed at children under 13 and does not knowingly collect any information from
 anyone, including children.
 
 ## Changes to this policy
